@@ -1,0 +1,16 @@
+.primary {
+    background-color: #e45f20;
+    color: white;
+}
+.primary-color {
+    color: #e45f20;
+}
+.text:hover {
+    color: #e45f20;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.overlayInput {
+    background-color: rgba(0, 0, 0, 0.5);
+}

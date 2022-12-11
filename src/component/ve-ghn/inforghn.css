@@ -1,0 +1,85 @@
+.imgbg {
+    width: 100%;
+    height: 120px;
+    background-image: url('https://ld-wp73.template-help.com/wordpress/prod_5372/v1/wp-content/uploads/2019/10/bg-section-about.png');
+    background-repeat: no-repeat;
+    background-position: 91% 24%;
+    background-size: auto;
+}
+
+.ghn::after {
+    content: '';
+    position: absolute;
+    background-color: #f3f2fd;
+    display: block;
+    bottom: -23px;
+    left: 10%;
+    border-width: 23px 25px 0 0;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+
+.people::after {
+    content: '';
+    position: absolute;
+    background-color: #f3f2fd;
+    display: block;
+    bottom: -23px;
+    left: 8%;
+    border-width: 23px 25px 0 0;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+}
+
+.iconSp {
+    transform: translateZ(0);
+    transition: all .5s ease-out;
+}
+
+.iconSp:hover {
+    transform: translateZ(3px);
+    box-shadow: 1px 1px 5px rgb(186, 185, 185);
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 36px;
+    right: 8%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-weight: lighter;
+    font-size: 13px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 3;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 5%;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,.next:hover {
+    text-decoration: none;
+}
+.fadeTrans {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.icon-email {
+    border: 20px solid #bbd6e6;
+    border-radius: 50%;
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}

@@ -1,0 +1,25 @@
+
+.toggle_label {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10px;
+    right: 8px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.toggle_label::before {
+    content: '\2714';
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 5px;
+    top: -1px;
+    transition: width 2s;
+}
+
+.toggle_input:checked~.toggle_label {
+    background-color: #e45f20;
+}

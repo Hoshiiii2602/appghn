@@ -1,0 +1,66 @@
+.workGhn {
+    background: #e45f20;
+    position: relative;
+    box-sizing: border-box;
+    transition: 0.5s;
+    color: white;
+
+}
+
+.workGhn:hover {
+    background: none;
+}
+
+.workGhn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: scale(0);
+    transition: transform 0.5s;
+    transform-origin: left;
+    color: #e45f20;
+    border-radius: 6px;
+
+}
+
+.workGhn:hover:before {
+    transform: scaleX(1);
+    transition: transform 0.5s;
+    transform-origin: right;
+}
+
+
+
+
+
+.modalKvp:hover~.triangleModal {
+    display: block;
+}
+
+.triangleModal {
+    animation: modal .5s ease-in;
+    display: none;
+}
+
+.triangleModal::after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: -20px;
+    width: 244px;
+    height: 24px;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

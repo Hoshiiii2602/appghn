@@ -1,0 +1,24 @@
+.technolgy {
+    animation: upDown 2s linear 0s infinite alternate;
+    position: relative;
+}
+
+.imgTech2 img {
+    margin-left: 26% !important;
+}
+
+@media only screen and (max-width: 370px) {
+    .imgTech2 img {
+        margin-left: 16% !important;
+    }
+}
+
+@keyframes upDown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(20px);
+    }
+}

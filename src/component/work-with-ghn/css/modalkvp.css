@@ -1,0 +1,12 @@
+.triangleModal::before {
+    content: "";
+    position: absolute;
+    top: 62px;
+    left: 50%;
+    border-color: transparent transparent rgb(241, 238, 238) transparent;
+    border-width: 12px;
+}
+.triangleModal:hover {
+    display: block;
+    cursor: pointer;
+}

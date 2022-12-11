@@ -1,0 +1,92 @@
+.dropdown:hover>.dropdown-menu {
+    transform: translateY(10px);
+    display: block;
+    animation: fadeIn ease-in .5s;
+}
+
+.dropdown-menu {
+    display: none;
+    transform: translateY(20px);
+}
+
+.dropdown-menu::after {
+    content: '';
+    top: -19px;
+    left: 0;
+    height: 25px;
+    width: 145px;
+    position: absolute;
+    display: block;
+}
+
+.icon-transform:hover span {
+    transition: transform .2s ease-in-out;
+    transform: rotate(180deg);
+}
+
+.imgGhn {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background: #f15b1f;
+    border: 1px solid #f15b1f;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 93%;
+    background-position: center;
+    position: relative;
+}
+
+.overlayModal {
+    background-color: rgba(116, 116, 116, 0.3);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    animation: modalTablet .8s ease-in;
+
+}
+
+#modalTablet {
+    position: absolute;
+    z-index: 31;
+    height: 100vh;
+    top: 0;
+    animation: modalTablet .5s ease-in;
+}
+
+#modalService {
+    position: absolute;
+    z-index: 31;
+    height: 100vh;
+    top: 0;
+    animation: modalTablet .5s ease-in;
+}
+
+#modalInformations {
+    position: absolute;
+    z-index: 31;
+    height: 100vh;
+    top: 0;
+    animation: modalTablet .5s ease-in;
+}
+
+@keyframes modalTablet {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: -56px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

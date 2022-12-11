@@ -1,0 +1,9 @@
+.seeMore::before {
+    content: '\226B';
+    position: absolute;
+    top: 0;
+    font-size: medium;
+    right: -6px;
+    width: 5px;
+    height: 5px;
+}

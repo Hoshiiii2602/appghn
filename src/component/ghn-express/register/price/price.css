@@ -1,0 +1,14 @@
+.parent:hover .img1 {
+    display: none  !important;
+}
+.parent:hover .img2 {
+    display: block  !important;
+}
+
+.img2 {
+    display: none;
+}
+.active {
+    background: #00467f;
+    color: white;
+}

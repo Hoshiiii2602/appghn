@@ -1,0 +1,55 @@
+.btn-video {
+    color: #333;
+    background-color: #00477f;
+    border-radius: 50%;
+}
+
+.btn-video::after {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #00477f;
+    opacity: .8;
+    border-radius: 50%;
+    animation: videoBtn 2s ease-out 0s infinite alternate;
+}
+
+.scrollIcon {
+    position: relative;
+    animation: scrollicon .5 ease-in-out 0s infinite alternate;
+}
+
+.notification {
+    background-image: url(../../../public/image/xaydung.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+
+@keyframes videoBtn {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes scrollicon {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 14px;
+    }
+}
