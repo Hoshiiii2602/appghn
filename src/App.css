@@ -14,3 +14,7 @@
 .overlayInput {
     background-color: rgba(0, 0, 0, 0.5);
 }
+.btn:focus {
+    outline: none;
+    text-decoration: none;
+}
