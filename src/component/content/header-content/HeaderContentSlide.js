@@ -1,15 +1,16 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./HeaderSlide.css";
+import { Link } from "react-router-dom";
 
-import { Autoplay, Pagination, Navigation, EffectFade } from "swiper";
+import { Autoplay, Pagination, Navigation, EffectFade, History } from "swiper";
 
 export default function HeaderContentSlide() {
   var menu = [
-    "Bán hàng làm giảu<br>cùng GHN",
-    "GHN liên tục cập nhật<br>tuyến ảnh hưởng do dịch",
+    "Giao siêu nhanh<br>giá siêu tốc",
+    "Bản tin chính GHN<br>Cập nhật trạng thái giao hàng",
     "Dịch vụ giao hàng<br>thương mại điện tử",
-    "Dịch vụ kho và<br>xử lý đơn hàng",
+    "Tiết kiện chi phí<br>quản lý đơn sẵn",
   ];
 
   const pagination = {
@@ -30,9 +31,14 @@ export default function HeaderContentSlide() {
           delay: 2500,
           disableOnInteraction: false,
         }}
+        style={{
+          "--swiper-pagination-color": "#fff",
+          "--swiper-navigation-color": "#fff",
+          "--swiper-navigation-size": "30px",
+        }}
         pagination={pagination}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation, EffectFade]}
+        modules={[Autoplay, Pagination, Navigation, EffectFade, History]}
         className="mySwiper laptop:rounded-2xl mobile:rounded-sm"
       >
         <SwiperSlide>
@@ -45,7 +51,7 @@ export default function HeaderContentSlide() {
           </picture>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="/">
+          <Link to="/">
             <picture>
               <source srcSet="https://file.hstatic.net/200000472237/file/slideshow_3_7d41169783fa4ed5a29186166433ffff.jpeg"></source>
               <img
@@ -53,10 +59,10 @@ export default function HeaderContentSlide() {
                 alt="GHN Liên Tục Cập Nhật Tuyến Ảnh Hưởng Do Dịch"
               ></img>
             </picture>
-          </a>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="/">
+          <Link to="/">
             <picture>
               <source srcSet="https://file.hstatic.net/200000472237/file/banner-ghn-express-1920_6abe9e468bf0419fbaf6c36d4f5f37d7.png"></source>
               <img
@@ -64,10 +70,10 @@ export default function HeaderContentSlide() {
                 alt="Dịch vụ giao hàng nhanh"
               ></img>
             </picture>
-          </a>
+          </Link>
         </SwiperSlide>
         <SwiperSlide>
-          <a href="/">
+          <Link to="/">
             <picture>
               <source srcSet="https://file.hstatic.net/200000472237/file/banner_fufilment-01_e0f230a826124044928be7e7351e28ff.png"></source>
               <img
@@ -75,7 +81,7 @@ export default function HeaderContentSlide() {
                 alt="Dịch vụ kho bãi và xử lý hàng hoá"
               ></img>
             </picture>
-          </a>
+          </Link>
         </SwiperSlide>
       </Swiper>
       <div className="swiper-pagination tablet:flex mobile:hidden"></div>

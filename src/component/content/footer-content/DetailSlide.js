@@ -10,7 +10,7 @@ import "swiper/css/effect-flip";
 import styles from "./css/detailslide.module.css";
 
 // import required modules
-import { Pagination, Navigation, Autoplay, EffectFlip } from "swiper";
+import { Pagination, Navigation, Autoplay, EffectCreative } from "swiper";
 import { giaoHangNhanhServices } from "../../../services/ghn.services";
 
 export default function DetailSlide() {
@@ -35,7 +35,7 @@ export default function DetailSlide() {
                         delay: 2500,
                         disableOnInteraction: false,
                     }}
-                    modules={[Pagination, Navigation, Autoplay, EffectFlip]}
+                    modules={[Pagination, Navigation, Autoplay, EffectCreative]}
                     className="mySwiper"
                 >
                     {detail.map((partner, index) => {
