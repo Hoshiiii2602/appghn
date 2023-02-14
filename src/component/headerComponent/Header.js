@@ -67,13 +67,16 @@ export default function Header() {
   let user = useContext(authProvider);
 
   const handleLogout = () => {
-    signOut(auth)
-      .then(() => redirect("/registor"))
-      .catch(() => console.log("Logout failed"));
+    if (window.confirm("Bạn có muốn đăng xuất?") === true) {
+      signOut(auth)
+        .then(() => redirect("/"))
+        .catch(() => console.log("Logout failed"));
+    } else {
+    }
   };
 
   return (
-    <div className="h-[86px] fixed z-20 laptop:-ml-24">
+    <div className="h-[86px] fixed z-20 laptop:-ml-52">
       <nav className="bg-white tablet:w-full laptop:ml-4 tablet:mr-[20rem]">
         <div className="laptop:flex laptop:justify-between container laptop:m-auto">
           <div className="laptop:flex items-center mobile:hidden">
@@ -297,9 +300,11 @@ export default function Header() {
                 {hideenModal ? (
                   <div className="absolute top-16 bg-white px-2 border-2 mobile:right-0 tablet:left-40">
                     <ul>
-                      <a href="/">
-                        <li className="hover:cursor-pointer">Thêm thông tin</li>
-                      </a>
+                      <Link to="/">
+                        <li className="hover:cursor-pointer hover:underline">
+                          Thêm thông tin
+                        </li>
+                      </Link>
                       <li
                         onClick={handleLogout}
                         className="border-t-2 hover:cursor-pointer"
@@ -375,7 +380,7 @@ export default function Header() {
                       onClick={handleModalInformation}
                       className="border-t-[1px] flex justify-between items-center text-2xl text-left"
                     >
-                      <p className="p-5 border-r-2 tablet:pr-[63%] mobile:pr-[44%]">
+                      <p className="p-5 border-r-2 tablet:pr-[63%] mobile:pr-[44%] hover:underline">
                         Thêm thông tin
                       </p>
                       <AiOutlineRight style={{ marginRight: "6px" }} />
