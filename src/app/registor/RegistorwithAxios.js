@@ -323,7 +323,7 @@ export default function RegistorwithAxios() {
                               className="text-blue-700"
                               onClick={handleLogin}
                             >
-                              Login with Facebook
+                              Login to Facebook
                             </button>
                             <div className="ml-4">
                               <button
@@ -332,9 +332,9 @@ export default function RegistorwithAxios() {
                                 href="/sigin-email"
                               >
                                 <p>
-                                  Or login if have
-                                  <span className="text-red-500 ml-2">
-                                    your account
+                                  Or login if have account
+                                  <span className="primary-color ml-2">
+                                    Đăng nhập
                                   </span>
                                 </p>
                               </button>
