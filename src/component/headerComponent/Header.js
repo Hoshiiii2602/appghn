@@ -87,15 +87,15 @@ export default function Header() {
             </div>
             <ul className="nav navbar-nav laptop:block items-center text-center">
               <li>
-                <a
-                  className="hover:border-b-primary border-transparent hover:bg-zinc-900 font-semibold text-2xl hover:text-primary border-b-2"
-                  href="/"
+                <Link
+                  className="hover:border-b-primary border-transparent mr-2 hover:bg-zinc-900 font-semibold text-2xl hover:text-primary border-b-2"
+                  to="/"
                 >
                   TRANG CHỦ
-                </a>
+                </Link>
               </li>
               <li
-                className="icon-transform leading-8 dropdown border-b-primary hover:border-b-0 font-semibold text-2xl"
+                className="icon-transform leading-8 dropdown border-b-primary mr-2 hover:border-b-0 font-semibold text-2xl"
                 href="#"
               >
                 <div className="inline-flex items-end mt-6 hover:text-primary">
@@ -171,15 +171,15 @@ export default function Header() {
               </li>
               <li>
                 <Link
-                  className="border-b-primary font-semibold text-2xl hover:text-primary hover:border-b-2"
-                  to="#"
+                  className="border-b-primary mr-2 font-semibold text-2xl hover:text-primary hover:border-b-2"
+                  to="/pages/notification"
                 >
                   TIN TỨC
                 </Link>
               </li>
 
               <li
-                className="font-semibold mt-6 text-2xl icon-transform dropdown hover:shadow-orange-500 border-b-primary hover:border-b-0"
+                className="font-semibold mt-6 mr-2 text-2xl icon-transform dropdown hover:shadow-orange-500 border-b-primary hover:border-b-0"
                 // href="#"
               >
                 <div className="inline-flex hover:text-primary ">
@@ -290,17 +290,19 @@ export default function Header() {
                 ) : (
                   <p className="mr-2 text-2xl font-medium">Xin chào</p>
                 )}
-                <p className="font-medium text-2xl mr-2">{user.displayName}</p>
+                <p className="font-medium text-2xl mr-2 primary-color">{user.displayName}</p>
                 <button
                   onClick={() => setHiddenModal(!hideenModal)}
                   className="mt-2"
                 >
-                  <AiFillCaretDown />
+                  <AiFillCaretDown 
+                    className="primary-color"
+                  />
                 </button>
                 {hideenModal ? (
                   <div className="absolute top-16 bg-white px-2 border-2 mobile:right-0 tablet:left-40">
                     <ul>
-                      <Link to="/">
+                      <Link to="/pages/notification">
                         <li className="hover:cursor-pointer hover:underline">
                           Thêm thông tin
                         </li>

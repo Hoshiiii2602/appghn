@@ -22,26 +22,26 @@ export default function TooglePicture({data2}) {
                 <div className='col-span-1'>
                     <ul>
                         <li className=''>
-                            <div onClick={(e) => Open('parent1', 'province')} id='parent1' className='relative items-center active parent hover:drop-shadow-[20px] hover:transition-all ease-in-out delay-75 flex justify-start py-10 border-t-[1px] hover:bg-[#00467f] hover:text-white'>
+                            <div onClick={(e) => Open('parent1', 'province')} id='parent1' className='relative items-center active parent hover:drop-shadow-[20px] rounded-l-xl hover:transition-all ease-in-out delay-75 flex justify-start py-10 border-t-[1px] hover:bg-[#00467f] hover:text-white'>
                                 <span className='font-semibold text-2xl px-4'>{data2.number.number1}</span>
                                 <span className='ml-8 text-2xl font-semibold max-w-[65%]'>{data2.title.til1}</span>
                             </div>
                         </li>
                         <li className=''>
-                            <div onClick={(e) => Open('parent2', 'leangue')} id='parent2' className='items-center parent hover:drop-shadow-[20px] hover:transition-all ease-in-out delay-75 flex justify-start py-10 border-t-[1px] hover:bg-[#00467f] hover:text-white'>
+                            <div onClick={(e) => Open('parent2', 'leangue')} id='parent2' className='items-center parent hover:drop-shadow-[20px] rounded-l-xl hover:transition-all ease-in-out delay-75 flex justify-start py-10 border-t-[1px] hover:bg-[#00467f] hover:text-white'>
                                 <span className='font-semibold text-2xl px-4'>{data2.number.number2}</span>
                                 <span className='ml-8 text-2xl font-semibold max-w-[65%]'>{data2.title.til2}</span>
                             </div>
                         </li>
                         <li className=''>
-                            <div onClick={(e) => Open('parent3',  'special')} id='parent3' className='items-center parent hover:drop-shadow-[20px] hover:transition-all ease-in-out delay-75 flex justify-start py-10 border-t-[1px] hover:bg-[#00467f] hover:text-white'>
+                            <div onClick={(e) => Open('parent3',  'special')} id='parent3' className='items-center parent hover:drop-shadow-[20px] rounded-l-xl hover:transition-all ease-in-out delay-75 flex justify-start py-10 border-t-[1px] hover:bg-[#00467f] hover:text-white'>
                                 <span className='font-semibold text-2xl px-4'>{data2.number.number3}</span>
                                 <span className='ml-8 text-2xl font-semibold max-w-[65%]'>{data2.title.til3}</span>
                             </div>
                         </li>
                         <li className=''>
                             <a className='hover:no-underline '>
-                                <div onClick={(e) => Open('parent4', 'number4')} id='parent4' className='items-center parent hover:drop-shadow-[20px] hover:transition-all ease-in-out delay-75 flex justify-start py-10 border-t-[1px] hover:bg-[#00467f] hover:text-white'>
+                                <div onClick={(e) => Open('parent4', 'number4')} id='parent4' className='items-center parent hover:drop-shadow-[20px] rounded-l-xl hover:transition-all ease-in-out delay-75 flex justify-start py-10 border-t-[1px] hover:bg-[#00467f] hover:text-white'>
                                     <span className='font-semibold text-2xl px-4'>{data2.number.number4}</span>
                                     <span className='ml-8 text-2xl font-semibold max-w-[65%]'>{data2.title.til4}</span>
                                 </div>
@@ -49,7 +49,7 @@ export default function TooglePicture({data2}) {
                         </li>
                         <li className=''>
                             <a className='hover:no-underline '>
-                                <div onClick={(e) => Open('parent5', 'number5')} id='parent5' className='items-center parent hover:drop-shadow-[20px] hover:transition-all ease-in-out delay-75 flex justify-start py-10 border-t-[1px] hover:bg-[#00467f] hover:text-white'>
+                                <div onClick={(e) => Open('parent5', 'number5')} id='parent5' className='items-center parent hover:drop-shadow-[20px] rounded-l-xl hover:transition-all ease-in-out delay-75 flex justify-start py-10 border-t-[1px] hover:bg-[#00467f] hover:text-white'>
                                     <span className='font-semibold text-2xl px-4'>{data2.number.number5}</span>
                                     <span className='ml-8 text-2xl font-semibold max-w-[65%]'>{data2.title.til5}</span>
                                 </div>
