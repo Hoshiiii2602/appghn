@@ -27,22 +27,22 @@ export default function RegistorwithAxios() {
 
   useEffect(() => {
     let today = new Date();
-    if (0 > today.getHours() >= 6) {
+    if (today.getHours() < 6 && today.getHours() >= 0) {
       setHours(
-        "Chào mừng bạn đến với ngày mới !!! Hãy ngủ đi cho khoẻ nhé bạn 😁"
+        "Chào mừng bạn đến với ngày mới !!! Còn khá sớm hãy ngủ xíu đi bạn nhé 😁"
       );
-    } else if (6 > today.getHours() >= 12) {
+    } else if (today.getHours() >= 6 && today.getHours() < 12) {
       setHours(
         "Buổi sáng an lành, thực hiện mọi công việc trong ngày mới nào !!!"
       );
-    } else if (12 > today.getHours() > 17) {
+    } else if (today.getHours() >= 12 && today.getHours() < 17) {
       setHours("Buổi chiều vui vẻ bạn nhé !!!");
     } else {
       setHours(
         "Buổi tối an lành bên gia đình và gác lại công việc bạn nhé !!!"
       );
     }
-  });
+  }, []);
 
   const {
     register,
@@ -293,8 +293,13 @@ export default function RegistorwithAxios() {
                               className="form-check-label mt-2"
                               htmlFor="form2Example3"
                             >
-                              Đồng ý với điều khoản {" "}
-                              <Link to="/pages/notification" className="primary-color">Terms of service</Link>
+                              Đồng ý với điều khoản{" "}
+                              <Link
+                                to="/pages/notification"
+                                className="primary-color"
+                              >
+                                Terms of service
+                              </Link>
                             </label>
                             {errors.argree && (
                               <p className="italic text-red-500 mt-2 ml-4">
